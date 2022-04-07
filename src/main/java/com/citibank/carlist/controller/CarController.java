@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.citibank.carlist.entities.Car;
-import com.citibank.carlist.service.carService;
+import com.citibank.carlist.service.CarService;
 
 import com.citibank.carlist.controller.CarController;
 
@@ -25,7 +25,7 @@ public class CarController {
 	private final Logger LOGGER = LoggerFactory.getLogger(CarController.class);
 	
 	@Autowired
-	private carService carservice;
+	private CarService carservice;
 	
 	
 	@PostMapping("/carList")

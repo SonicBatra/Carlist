@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.citibank.carlist.entities.Car;
 
-public interface carService {
+public interface CarService {
 
 	public List<Car> savecarList(Car car);
 

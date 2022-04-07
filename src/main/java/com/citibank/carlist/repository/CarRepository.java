@@ -9,7 +9,7 @@ import com.citibank.carlist.entities.Car;
 
 
 @Repository
-public interface carRepository extends JpaRepository<Car, Long>{
+public interface CarRepository extends JpaRepository<Car, Long>{
 
 	public Car save(Car car);
 

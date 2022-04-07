@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.citibank.carlist.entities.Car;
-import com.citibank.carlist.repository.carRepository;
+import com.citibank.carlist.repository.CarRepository;
 
-public class carServiceImpl implements carService{
+public class CarServiceImpl implements CarService{
 	//return "Car {" + "carID=" + carID + ", carName=" + carName + ", engineCC=" + engineCC + ", transmission="
 	//		+ transmission + ", seatingcapacity=" + seatingcapacity + ", ncapRating=" + ncapRating + ", color="
 	//		+ color + "}";
@@ -17,7 +17,7 @@ public class carServiceImpl implements carService{
 	
 	List<Car> list;
 	
-	public carServiceImpl(){
+	public CarServiceImpl(){
 		list = new ArrayList<>();
 		list.add(new Car( 1, "Maruti", 1000, "Automatic", 5, 4, "White"));
 		list.add(new Car( 2, "Honda", 1000, "Automatic", 5, 4, "Grey"));
@@ -26,7 +26,7 @@ public class carServiceImpl implements carService{
 	}
 	
 	@Autowired
-	private carRepository carrepository;
+	private CarRepository carrepository;
 	
 	@Override
 	public List<Car> savecarList(Car car) {
